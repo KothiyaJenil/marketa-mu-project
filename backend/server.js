@@ -34,7 +34,7 @@ const app = express();
 
 // Middlewares
 app.use(cors({
-  origin: 'http://localhost:5173',
+  origin: 'https://marketa-mu-project-1.onrender.com/',
   credentials: true,
 }));
 app.use(express.json());
