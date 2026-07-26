@@ -33,10 +33,16 @@ const __dirname = path.dirname(__filename);
 const app = express();
 
 // Middlewares
+const allowedOrigins = [
+  "http://localhost:5173",
+  "https://marketa-mu-project-1.onrender.com",
+];
+
 app.use(cors({
-  origin: 'https://marketa-mu-project-1.onrender.com/',
+  origin: allowedOrigins,
   credentials: true,
 }));
+
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
