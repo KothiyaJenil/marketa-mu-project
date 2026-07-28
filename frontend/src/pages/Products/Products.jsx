@@ -124,10 +124,10 @@ export default function Products() {
                 ) : products.map(p => (
                   <tr key={p._id}>
                     <td>
-                      {p.image ? <img src={`https://marketa-mu-project.onrender.com/${p.image}`} alt={p.name} style={{ width: 40, height: 40, borderRadius: 6, objectFit: 'cover' }} />
+                      {p.image ? <img src={`https://marketa-mu-project.onrender.com${p.image}`} alt={p.name} style={{ width: 40, height: 40, borderRadius: 6, objectFit: 'cover' }} />
                         : <div style={{ width: 40, height: 40, borderRadius: 6, background: 'var(--bg-input)', display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'var(--text-muted)', fontSize: 18 }}>📦</div>}
                     </td>
-                    
+
                     <td>
                       <div style={{ fontWeight: 600 }}>{p.name}</div>
                       {p.brand && <div style={{ color: 'var(--text-muted)', fontSize: 11 }}>{p.brand}</div>}
