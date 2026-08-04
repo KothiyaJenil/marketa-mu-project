@@ -20,7 +20,7 @@ export const protect = async (req, res, next) => {
     if (!req.user) {
       return errorResponse(res, 401, 'User not found');
     }
-
+    
     next();
   } catch (error) {
     return errorResponse(res, 401, 'Invalid or expired token');

@@ -64,9 +64,9 @@ function App() {
         <Toaster
           position="top-right"
           toastOptions={{
-            style: { background: '#1e2a3b', color: '#e2e8f0', border: '1px solid #2d3f55' },
-            success: { iconTheme: { primary: '#00d97e', secondary: '#0a0f1c' } },
-            error: { iconTheme: { primary: '#f05252', secondary: '#0a0f1c' } },
+            style: { background: '#ffffff', color: '#1a2e22', border: '1px solid #e2e8e4', boxShadow: '0 10px 30px rgba(15,59,47,0.1)' },
+            success: { iconTheme: { primary: '#15803d', secondary: '#ffffff' } },
+            error: { iconTheme: { primary: '#b91c1c', secondary: '#ffffff' } },
           }}
         />
       </BrowserRouter>
