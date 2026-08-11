@@ -65,7 +65,9 @@ export const updateProduct = async (req, res, next) => {
       req.body.image = `/uploads/${req.file.filename}`;
     }
 
-    const updated = await Product.findByIdAndUpdate(req.params.id, req.body, { new: true, runValidators: true }).populate('category', 'name');
+    Object.assign(product, req.body);
+    const updated = await product.save();
+    await updated.populate('category', 'name');
     successResponse(res, 200, 'Product updated successfully', updated);
   } catch (error) {
     next(error);

@@ -15,7 +15,6 @@ const pageTitles = {
   '/reports': { title: 'Reports', sub: 'Business insights and analytics' },
   '/notifications': { title: 'Notifications', sub: 'Stock alerts and system messages' },
   '/settings': { title: 'Settings', sub: 'Configure your shop information' },
-  '/admin': { title: 'Admin Panel', sub: 'Manage manager approvals' },
 };
 
 export default function Header() {

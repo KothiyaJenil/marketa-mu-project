@@ -90,7 +90,7 @@ export default function Settings() {
           <h3 style={{ fontSize: 15, fontWeight: 600, marginBottom: 20 }}>Shop Logo</h3>
           {currentLogo && (
             <div style={{ marginBottom: 16 }}>
-              <img src={`http://localhost:5000${currentLogo}`} alt="Current Logo" style={{ height: 80, borderRadius: 8, border: '1px solid var(--border)' }} />
+              <img src={`https://marketa-mu-project.onrender.com${currentLogo}`} alt="Current Logo" style={{ height: 80, borderRadius: 8, border: '1px solid var(--border)' }} />
               <p style={{ fontSize: 12, color: 'var(--text-muted)', marginTop: 6 }}>Current logo</p>
             </div>
           )}
