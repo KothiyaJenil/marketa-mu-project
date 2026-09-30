@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const API = axios.create({
-  baseURL: 'https://marketa-mu-project.onrender.com/api',
+  baseURL: 'https://marketa-mu-project.vercel.app/api',
   headers: { 'Content-Type': 'application/json' },
 });
 
