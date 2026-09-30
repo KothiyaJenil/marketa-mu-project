@@ -35,7 +35,7 @@ const app = express();
 // Middlewares
 const allowedOrigins = [
   "http://localhost:5173",
-  "https://marketa-mu-project-3tul.vercel.app/",
+  "https://marketa-mu-project-3tul.vercel.app",
 ];
 
 app.use(cors({
